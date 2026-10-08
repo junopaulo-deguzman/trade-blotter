@@ -1,0 +1,9 @@
+backend/node_modules/**
+frontend/node_modules/**
+.github/**
+.env
+.env.*
+!.env.example
+!backend/.env.test.example
+frontend/dist/
+

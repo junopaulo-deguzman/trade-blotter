@@ -1,0 +1,41 @@
+[
+  {
+    "tradeId": "TRD-100001",
+    "symbol": "AAPL",
+    "side": "BUY",
+    "quantity": 5000,
+    "price": 227.45,
+    "trader": "JSMITH",
+    "book": "EQUITIES_UK",
+    "counterparty": "Goldman Sachs",
+    "tradeTimestamp": "2026-08-18T09:15:23Z",
+    "status": "ACTIVE",
+    "recordedById": "1"
+  },
+  {
+    "tradeId": "TRD-100002",
+    "symbol": "MSFT",
+    "side": "SELL",
+    "quantity": 1200,
+    "price": 534.22,
+    "trader": "ABROWN",
+    "book": "EQUITIES_US",
+    "counterparty": "JP Morgan",
+    "tradeTimestamp": "2026-08-18T09:18:54Z",
+    "status": "ACTIVE",
+    "recordedById": "2"
+  },
+  {
+    "tradeId": "TRD-100003",
+    "symbol": "TSLA",
+    "side": "BUY",
+    "quantity": 800,
+    "price": 341.75,
+    "trader": "MJONES",
+    "book": "TECH_GROWTH",
+    "counterparty": "Morgan Stanley",
+    "tradeTimestamp": "2026-08-18T09:20:11Z",
+    "status": "CANCELLED",
+    "recordedById": "3"
+  }
+]

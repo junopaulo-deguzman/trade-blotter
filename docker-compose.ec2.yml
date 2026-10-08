@@ -1,0 +1,19 @@
+# Docker Compose 2.24.4+; combine with docker-compose.yml.
+services:
+  db:
+    ports: !reset []
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env.ec2}
+
+  migrate:
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env.ec2}
+
+  api:
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env.ec2}
+      WS_ALLOWED_ORIGINS: ${WS_ALLOWED_ORIGINS:?Set the exact public frontend origin in .env.ec2}
+
+  frontend:
+    ports: !override
+      - "${WEB_BIND_ADDRESS:-0.0.0.0}:${WEB_PORT:-80}:80"
